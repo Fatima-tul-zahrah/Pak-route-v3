@@ -6,23 +6,23 @@
         "image": "img/destinations/hunza valley.jpg",
         "description": "The Hunza Valley is a mountainous valley located in the region of Gilgit-Baltistan in Pakistan administered Kashmir...",
         "duration": "8",
-        "price": "45000"
+        "price": "48000"
     },
     {
         "id": 2,
         "title": "Kalam Valley Ushu",
-        "image": "img/destinations/lake-kalam.jpg",
+        "image": "img/destinations/kalam-village.jpg",
         "description": "Kalam (کالام) is a valley located in the Swat Kohistan region of Swat District in the Khyber Pakhtunkhwa province...",
-        "duration": "8",
-        "price": "45000"
+        "duration": "7",
+        "price": "42000"
     },
     {
         "id": 3,
         "title": "Malam Jabba Resort",
         "image": "img/destinations/malam-jabba.jpg",
         "description": "Malam Jabba (مالم جبہ) is a hill station and ski resort in Pakistan found in the Hindu Kush mountain range...",
-        "duration": "8",
-        "price": "45000"
+        "duration": "4",
+        "price": "32000"
     },
     {
         "id": 4,
@@ -37,16 +37,16 @@
         "title": "Murree",
         "image": "img/destinations/murre.webp",
         "description": "Murree is a mountain resort city in the northernmost region of the Punjab province of Pakistan...",
-        "duration": "8",
-        "price": "45000"
+        "duration": "5",
+        "price": "35000"
     },
     {
         "id": 6,
         "title": "Swat River, Swat",
         "image": "img/destinations/swat.webp",
         "description": "Swat Valley, is a district in the Malakand Division of Khyber Pakhtunkhwa, Pakistan...",
-        "duration": "8",
-        "price": "45000"
+        "duration": "7",
+        "price": "42000"
         
     },
     {
@@ -54,6 +54,71 @@
         "title": "Deosai National Park",
         "image": "img/destinations/deosoi.jpg",
         "description": "Deosai Plains, also known as Deosai National Park, is a high-altitude plateau located in Gilgit-Baltistan...",
+        "duration": "6",
+        "price": "36000"
+    },
+    {
+        "id": 8,
+        "title": "Lahore Fort",
+        "image": "img/destinations/lahore-fort.webp",
+        "description": "Lahore fort is a citadel in the city of Lahore in Pakistan. The fort is located at the northern end of the Walled City of Lahore...",
+        "duration": "2",
+        "price": "25000"
+    },
+    {
+        "id": 9,
+        "title": "Chitral Valley",
+        "image": "img/destinations/chitral.png",
+        "description": "Chitral is a mountainous valley located in the Khyber Pakhtunkhwa province of Pakistan, known for its stunning landscapes...",
+        "duration": "7",
+        "price": "42000"
+    },
+    {
+        "id": 10,
+        "title": "Eagle's Nest,",
+        "image": "img/destinations/eagle.jpeg",
+        "description": "Eagle Nest is a popular tourist destination located in the northern areas of Pakistan, specifically in the Gilgit-Baltistan region.It provides breathtaking views of the surrounding mountains..",
+        "duration": "5",
+        "price": "38000"
+    },
+    {
+        "id":11,
+        "title": "Shimshal Valley",
+        "image": "img/destinations/Shimshal-Valley.jpg",
+        "description": "Shimshal Valley is a scenic valley located in the northern areas of Pakistan, known for its natural beauty and panoramic views.",
+        "duration": "8",
+        "price": "45000"
+    }
+    ,
+    {
+        "id":12,
+        "title": "Skardu Valley",
+        "image": "img/destinations/skardu.webp",
+        "description": "Skardu Valley is a scenic valley located in the northern areas of Pakistan, known for its natural beauty and panoramic views.",
+        "duration": "8",
+        "price": "45000"
+    },
+    {
+        "id":13,
+        "title": "Siri paye meadows",
+        "image": "img/destinations/Siri Paye Meadows.png",
+        "description": "Siri paye meadows is a scenic valley located in the northern areas of Pakistan, known for its natural beauty and panoramic views.",
+        "duration": "5",
+        "price": "36000"
+    },
+    {
+        "id":14,
+        "title": "Lulusar Lake",
+        "image": "img/destinations/lulusar-lake-on-a-clear.jpg",
+        "description": "Lulusar Lake is a scenic lake located in the northern areas of Pakistan, known for its natural beauty and panoramic views.",
+        "duration": "7",
+        "price": "42000"
+    },
+    {
+        "id":15,
+        "title": "Saiful Muluk Lake",
+        "image": "img/destinations/saif-ul-muluk-lake.jpg",
+        "description": "Saiful Muluk Lake is a scenic lake located in the northern areas of Pakistan, known for its natural beauty and panoramic views.",
         "duration": "8",
         "price": "45000"
     }
