@@ -9,15 +9,15 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         .main{
-            width: 60%;
+            width: 90%;
             margin: 20px auto;
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
 
         }
         .pkg{
-            height: 500px;
-            width: 70%;
+            height: 400px;
+            width: 350px;
             border-radius:15px ;
             overflow: hidden;
             background-color: rgb(237, 237, 237);
@@ -31,14 +31,14 @@
         }
         .pkg h2{
             text-align: center;
-            font-size: 20px;
+            font-size: 18px;
             font-family: sans-serif;
             padding: 10px;
         }
         .detail-c{
             width: 90%;
             margin: 15px auto;
-            font-size: 18px;
+            font-size: 16px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -48,7 +48,7 @@
             border: 2px solid white;
             color: white;
             border-radius: 8px;
-            padding: 10px 20px;
+            padding: 7px 10px;
             transition: all .5s ease;
         }
         .d-btn:hover{
@@ -57,8 +57,30 @@
             border: 2px solid black;
 
         }
-
-        /* Responsive Styles */
+        @media(max-width: 1200px){
+            .main {
+                width: 95%;
+                grid-template-columns: 1fr 1fr;
+            }
+            .pkg{
+                width: 450px;
+            }
+        }
+        @media(max-width: 990px){
+            
+            .pkg{
+                width: 370px;
+            }
+        }
+         @media(max-width: 990px){
+            .main{
+                grid-template-columns: 1fr;
+            }
+            
+            .pkg{
+                width:90%;
+            }
+        }
         @media(max-width: 768px){
             .main {
                 width: 90%;
@@ -137,14 +159,7 @@
 <body>
     <div id="header"></div>
     <div class="main">
-        <div class="pkg">
-            <img src="img/main.jpeg" alt=""><div class="details">
-                <h2>sfas</h2>
-                <div class="detail-c">
-                     <p>Duration :123days</p><p>Price : 124 </p><button class="d-btn">Book A seat</button>
-                </div>
-            </div>
-        </div>
+       
     </div>
 
         <div id="footer"></div>
