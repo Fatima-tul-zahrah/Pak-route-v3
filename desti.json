@@ -1,0 +1,60 @@
+
+[
+    {
+        "id": 1,
+        "title": "Hunza Valley",
+        "image": "img/destinations/hunza valley.jpg",
+        "description": "The Hunza Valley is a mountainous valley located in the region of Gilgit-Baltistan in Pakistan administered Kashmir...",
+        "duration": "8",
+        "price": "45000"
+    },
+    {
+        "id": 2,
+        "title": "Kalam Valley Ushu",
+        "image": "img/destinations/lake-kalam.jpg",
+        "description": "Kalam (کالام) is a valley located in the Swat Kohistan region of Swat District in the Khyber Pakhtunkhwa province...",
+        "duration": "8",
+        "price": "45000"
+    },
+    {
+        "id": 3,
+        "title": "Malam Jabba Resort",
+        "image": "img/destinations/malam-jabba.jpg",
+        "description": "Malam Jabba (مالم جبہ) is a hill station and ski resort in Pakistan found in the Hindu Kush mountain range...",
+        "duration": "8",
+        "price": "45000"
+    },
+    {
+        "id": 4,
+        "title": "Naran Valley",
+        "image": "img/destinations/Narran-Valley.jpg",
+        "description": "Naran (ناران) is a town and tourist destination in the upper Kaghan Valley in the Mansehra District...",
+        "duration": "8",
+        "price": "45000"
+    },
+    {
+        "id": 5,
+        "title": "Murree",
+        "image": "img/destinations/murre.webp",
+        "description": "Murree is a mountain resort city in the northernmost region of the Punjab province of Pakistan...",
+        "duration": "8",
+        "price": "45000"
+    },
+    {
+        "id": 6,
+        "title": "Swat River, Swat",
+        "image": "img/destinations/swat.webp",
+        "description": "Swat Valley, is a district in the Malakand Division of Khyber Pakhtunkhwa, Pakistan...",
+        "duration": "8",
+        "price": "45000"
+        
+    },
+    {
+        "id": 7,
+        "title": "Deosai National Park",
+        "image": "img/destinations/deosoi.jpg",
+        "description": "Deosai Plains, also known as Deosai National Park, is a high-altitude plateau located in Gilgit-Baltistan...",
+        "duration": "8",
+        "price": "45000"
+    }
+]

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .mdiv{
+            height: 200px;
+            width: 80vw;
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .cdiv{
+        background-color: rgb(166, 0, 255);
+        height: 30px;
+        width: 30px;
+        border: 2px solid red;
+        }
+        .pos{
+            height: 200px;
+            width: 200px;
+            position: relative;
+background-color: blueviolet;
+padding: 40px;
+        }
+        .div2{
+            height: 50px;
+            width: 50px;
+            position:absolute;
+            left: 10px;bottom: 10px;
+  background-color:rgb(10, 123, 44);
+        }
+        .div3{
+            height: 50px;
+            width: 50px;
+              background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="mdiv">
+        <div class="cdiv1 cdiv"></div>
+        <div class="cdiv2 cdiv"></div>
+        <div class="cdiv3 cdiv"></div>
+        <div class="cdiv4 cdiv"></div>
+        <div class="cdiv5 cdiv"></div>
+    </div>
+    <div class="pos">
+      <div class="div2"></div>
+      
+      <div class="div3"></div>
+    </div>
+</body>
+</html>

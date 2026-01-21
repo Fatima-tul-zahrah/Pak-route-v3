@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Contact Us | Pak Route</title>
+    <style>
+        main {
+            height: 90vh;
+            width: 100%;
+            display: flex;
+        }
+
+        .mc {
+            height: 95%;
+            width: 45%;
+            border-radius: 10px;
+            background-color: rgb(237, 237, 237);
+        }
+
+        .mc h1 {
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .mc form {
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 40px;
+            flex-direction: column;
+        }
+
+        .mc form input {
+            width: 70%;
+            height: 40px;
+            border: 3px solid gray;
+            border-radius: 8px;
+        }
+
+        .message {
+            height: 100px;
+        }
+
+        .mc1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mc1 p {
+            max-width: 400px;
+            font-size: 20px;
+            padding: 20px;
+            margin: 5px;
+        }
+
+        .mc button {
+            padding: 10px 20px;
+            font-size: 25px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: rgb(25, 18, 61);
+            color: rgb(255, 255, 255);
+            border: 2px solid rgb(241, 241, 241);
+            transition: all .5s ease;
+        }
+
+        .mc button:hover {
+            color: rgb(12, 12, 78);
+            background-color: white;
+            border: 2px solid rgb(12, 12, 78);
+        }
+
+        .needs {
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .need-c {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .need-c h2{
+            font-size: 40px;
+            padding: 20px;
+            margin: 10px;
+        }
+        .cards{
+            height: 200px;
+            width: 300px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            justify-content: center;
+            color: white;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: rgb(18, 23, 77);
+            transition: all .68s ease;
+        }
+        .cards:hover{
+            background-color: white;
+            border: 2px solid rgb(12, 10, 74);
+            color: rgb(15, 15, 68);
+            
+        }
+        .cards h3{
+            font-size:30px;
+            padding:10px;
+        }
+        .cards p{
+           font-size: 20px;
+           font-weight: 400;
+           font-family:  sans-serif ;
+        }
+
+        /* Responsive Styles */
+        @media(max-width: 768px){
+            main {
+                flex-direction: column;
+                height: auto;
+                padding: 40px 0;
+                gap: 20px;
+            }
+            
+            .mc {
+                width: 90%;
+                height: auto;
+                margin: 20px auto;
+            }
+            
+            .mc h1 {
+                padding: 15px;
+                margin: 5px;
+                font-size: 22px;
+            }
+            
+            .mc form {
+                margin: 20px;
+                gap: 15px;
+                height: auto;
+            }
+            
+            .mc form input {
+                width: 100%;
+                height: 35px;
+                font-size: 14px;
+            }
+            
+            .mc button {
+                padding: 8px 16px;
+                font-size: 18px;
+            }
+            
+            .mc1 p {
+                max-width: 100%;
+                font-size: 16px;
+                padding: 15px;
+            }
+            
+            .need-c {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .need-c h2 {
+                font-size: 30px;
+                width: 100%;
+            }
+            
+            .cards {
+                width: 200px;
+                height: 150px;
+                margin: 15px;
+            }
+            
+            .cards h3 {
+                font-size: 22px;
+            }
+            
+            .cards p {
+                font-size: 16px;
+            }
+        }
+
+        @media(max-width: 480px){
+            main {
+                padding: 30px 0;
+            }
+            
+            .mc {
+                width: 95%;
+                border-radius: 8px;
+            }
+            
+            .mc h1 {
+                font-size: 20px;
+                padding: 12px;
+            }
+            
+            .mc form input {
+                width: 100%;
+                height: 32px;
+                border: 2px solid gray;
+                font-size: 12px;
+                box-sizing: border-box;
+            }
+            
+            .mc1 p {
+                font-size: 14px;
+                padding: 12px;
+            }
+            
+            .mc button {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+            
+            .need-c h2 {
+                font-size: 24px;
+                padding: 15px;
+            }
+            
+            .cards {
+                width: 150px;
+                height: 120px;
+                margin: 10px;
+                border-radius: 15px;
+            }
+            
+            .cards h3 {
+                font-size: 18px;
+                padding: 8px;
+            }
+            
+            .cards p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="mc mc1">
+            <h1>
+                Contact Us
+            </h1>
+            <p>
+                We’re here to help you plan your journey and answer any questions you may have. Feel free to reach out
+                to us anytime — we’d love to hear from you.
+            </p>
+        </div>
+        <div class="mc">
+            <form action="">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone number">
+                <input type="text" class="message" placeholder="Message">
+                <Button>
+                    Submit
+                </Button>
+            </form>
+        </div>
+    </main>
+
+
+    <div class="needs">
+        <div class="need-c">
+            <h2>
+                Need Help?
+            </h2>
+        </div>
+        <div class="need-c">
+            <div class="cards">
+                <h3>Our Phone</h3>
+                <p>03001231234</p>
+            </div>
+            <div class="cards">
+                <h3>Our Email</h3>
+                <p>info@pakroute.com</p>
+            </div>
+            <div class="cards">
+                <h3>Location</h3>
+                <p>UET Lahore</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="loader.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>About Us | Pak Route</title>
+    <style>
+        main {
+            height: 90vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            background: none;
+        }
+
+        main img {
+            height: 400px;
+            width: 60%;
+            margin-left: 100px;
+            border-radius: 15px;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+
+        .mh {
+            height: 280px;
+            width: 470px;
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(232, 232, 232);
+            border-radius: 15px;
+            transform: translateX(-50%);
+        }
+
+        .mh h1 {
+            font-size: 40px;
+            padding: 10px;
+        }
+
+        .mh p {
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .ab2 {
+            display: flex;
+        }
+
+        .ab-m {
+            height: 250px;
+            width: 450px;
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(232, 232, 232);
+            border-radius: 15px;
+            transform: translateX(50%);
+        }
+
+        .ab2 {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90vh;
+            width: 100%;
+        }
+
+        .ab2 img {
+            height: 400px;
+            width: 60%;
+            margin-right: 100px;
+            border-radius: 15px;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .ab-m h2 {
+            font-size: 40px;
+            padding: 14px;
+        }
+
+        .ab-m p {
+            font-size: 20px;
+            padding: 14px;
+        }
+
+        .ab2-2 img {
+            margin-left: 100px;
+            margin-right: 0;
+        }
+
+        .ab2-2 .ab-m {
+            transform: translateX(-50%);
+        }
+
+        .remain{
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+            color: white;
+            text-align: center;
+            justify-content: space-around;
+            background-color: rgb(21, 14, 56);
+        }
+        .rdivs{
+            max-width: 60%;
+            margin: 30px;
+        }
+        .rdivs h2{
+          padding: 30px;
+          font-size: 37px;
+        }
+         .rdivs ul{
+            padding: 20px;
+            font-size: 25px;
+            text-align: left;
+        }
+        .rdivs p{
+            padding: 20px;
+            font-size: 25px;
+        }
+@media(max-width:1050px){
+    .mh p, .ab-m p{
+        font-size: 16px;
+    }
+    .mh,.ab-m{
+        height: 320px;
+    }
+}
+        @media(max-width: 830px){
+            main {
+                flex-direction: column;
+                height: auto;
+                padding: 20px 0;
+            }
+            
+            main img {
+                width: 90%;
+                height: 250px;
+                margin: 20px auto;
+            }
+            
+            .mh {
+                width: 85%;
+                height: auto;
+                margin: -40px auto 20px auto;
+                padding: 20px;
+                transform: none;
+            }
+            
+            .mh h1 {
+                font-size: 28px;
+            }
+            
+            .mh p {
+                font-size: 16px;
+            }
+            
+            .ab2 {
+                flex-direction: column;
+                height: auto;
+                margin-top: 30px;
+            }
+            
+            .ab2-2 {
+                flex-direction: column;
+            }
+            .ab2-1{
+                flex-direction: column-reverse;
+            }
+            
+            .ab2 img {
+                width: 90%;
+                height: 250px;
+                margin: 20px auto;
+            }
+            
+            .ab-m {
+                width: 85%;
+                height: auto;
+                margin: -40px auto 20px auto;
+                padding: 20px;
+                transform: none;
+            }
+            
+            .ab2-2 .ab-m {
+                transform: none;
+            }
+            
+            .ab-m h2 {
+                font-size: 28px;
+            }
+            
+            .ab-m p {
+                font-size: 16px;
+            }
+            
+            .rdivs {
+                max-width: 85%;
+            }
+            
+            .rdivs h2 {
+                font-size: 24px;
+                padding: 20px 10px;
+            }
+            
+            .rdivs ul {
+                font-size: 16px;
+                padding: 15px;
+            }
+            
+            .rdivs p {
+                font-size: 16px;
+                padding: 15px;
+            }
+        }
+
+        @media(max-width: 480px){
+            main img {
+                width: 95%;
+                height: 200px;
+            }
+            
+            .mh {
+                width: 90%;
+                border-radius: 10px;
+                padding: 15px;
+                margin: -30px auto 15px auto;
+            }
+            
+            .mh h1 {
+                font-size: 22px;
+                padding: 8px;
+            }
+            
+            .mh p {
+                font-size: 14px;
+                padding: 12px;
+            }
+            
+            .ab2 img {
+                width: 95%;
+                height: 200px;
+                margin: 15px auto;
+            }
+            
+            .ab-m {
+                width: 90%;
+                border-radius: 10px;
+                padding: 15px;
+                margin: -30px auto 15px auto;
+            }
+            
+            .ab-m h2 {
+                font-size: 22px;
+                padding: 10px;
+            }
+            
+            .ab-m p {
+                font-size: 14px;
+                padding: 10px;
+            }
+            
+            .rdivs {
+                max-width: 90%;
+            }
+            
+            .rdivs h2 {
+                font-size: 20px;
+                padding: 15px;
+            }
+            
+            .rdivs ul {
+                font-size: 14px;
+            }
+            
+            .rdivs p {
+                font-size: 14px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <img src="img/destinations/eagle.jpeg" alt="">
+
+        <div class="mh">
+            <h1>About us</h1>
+            <p>We are a passionate travel company committed to creating unforgettable journeys for travelers who want
+                more than just a trip. With a strong focus on quality, comfort, and reliability, we turn travel dreams
+                into well-planned experiences.</p>
+        </div>
+    </main>
+    <div class="ab2 ab2-1">
+        <div class="ab-m">
+            <h2>
+                Our Mission
+            </h2>
+            <p>
+                Our mission is to make travel simple, enjoyable, and accessible for everyone. We aim to provide
+                well-organized travel solutions that allow our clients to explore the world with confidence and peace of
+                mind.
+            </p>
+        </div>
+        <img src="img/img2.jpeg" alt="">
+
+    </div>
+    <div class="ab2 ab2-2">
+        <img src="img/img1.jpeg" alt="">
+        <div class="ab-m">
+            <h2>
+                What We Do
+            </h2>
+            <p>
+                We offer complete travel services including tour planning, hotel bookings, transportation arrangements,
+                and customized travel packages. Whether it’s a family vacation, a solo adventure, or a group tour, we
+                handle every detail with care.
+            </p>
+        </div>
+    </div>
+
+    <div class="remain">
+      <div class="rdivs">
+        <h2>Why Choose Us</h2>
+            <ul>
+                <li>
+                    Personalized travel planning
+                </li>
+                 <li>
+                    Affordable and transparent pricing
+                </li>
+                 <li>
+                    Trusted partners and experienced guides
+                </li>
+                 <li>
+                   Customer support before, during, and after your trip
+                </li>
+                <li>
+                   Focus on comfort, safety, and satisfaction
+                </li>
+            </ul>
+      </div>
+      <div class="rdivs">
+        <h2>Our Values</h2>
+        <p>We believe in honesty, dedication, and responsible travel. Every journey we plan reflects our commitment to quality service and respect for our customers and destinations.</p>
+      </div>
+      <div class="rdivs">
+        <h2>Our Promise</h2>
+        <p>We promise to deliver smooth, memorable, and well-managed travel experiences. Your trust is our responsibility, and your satisfaction is our success.</p>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="loader.js"></script>
+</body>
+
+</html>

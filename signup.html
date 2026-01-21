@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Sign up
+    </title>
+    <style>
+        .parent {
+            width: 400px;
+            background-color: rgb(213, 214, 214);
+            border-radius: 20px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+            padding-top: 10px;
+        }
+
+        form {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        input {
+            height: 34px;
+            width: 100%;
+            background-color: white;
+            border-radius: 5px;
+            border: 2px solid gray;
+            margin: 2px auto;
+        }
+        .btn{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            color: white;
+            padding: 10px 30px;
+            font-size: 20px;
+            border-radius: 8px;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid rgb(210, 210, 210);
+            transition: all .5s ease;
+        }
+        .btn:hover{
+            background-color: white;
+            border: 2px solid black;
+            color: black;
+        }
+        form p{
+            padding: 20px;
+        }
+
+        /* Responsive Styles */
+        @media(max-width: 768px){
+            .parent {
+                width: 85%;
+                margin: 50px auto;
+                border-radius: 15px;
+            }
+            
+            h2 {
+                font-size: 24px;
+                padding: 10px;
+            }
+            
+            form {
+                width: 90%;
+            }
+            
+            input {
+                height: 32px;
+                font-size: 14px;
+            }
+            
+            .btn {
+                font-size: 16px;
+                padding: 8px 24px;
+            }
+            
+            form p {
+                font-size: 14px;
+                padding: 15px;
+            }
+        }
+
+        @media(max-width: 480px){
+            .main {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+            }
+            
+            .parent {
+                width: 90%;
+                margin: 20px auto;
+                border-radius: 12px;
+                padding: 10px 0;
+            }
+            
+            h2 {
+                font-size: 20px;
+                padding: 8px;
+            }
+            
+            form {
+                width: 95%;
+            }
+            
+            input {
+                height: 30px;
+                border-radius: 5px;
+                font-size: 12px;
+                margin: 4px auto;
+            }
+            
+            label {
+                font-size: 13px;
+            }
+            
+            .btn {
+                font-size: 14px;
+                padding: 6px 20px;
+                margin: 10px auto;
+            }
+            
+            form p {
+                font-size: 12px;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="parent">
+            <h2>Sign up</h2>
+            <form>
+                <label>
+                    Full name:
+                </label><br>
+                <input text="Full name" placeholder="Enter full name" required><br><br>
+                <label>Email:</label><br>
+                <input text="Email" placeholder="Enter email" required><br><br>
+                <label>Username:</label><br>
+                <input text="Username" placeholder="Enter username" required><br><br>
+                <label>Password:</label><br>
+                <input password="password" placeholder="Enter password" required><br><br>
+                <label>Confirm password:</label><br>
+                <input password="Confirm password" placeholder="Confirm password" required><br><br>
+                <button type="submit" class="btn">Sign Up</button>
+
+
+                <p> If You already have an account <a href="login.html">login</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

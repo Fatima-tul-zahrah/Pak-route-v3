@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Services | Pak Route</title>
+    <style>
+        main {
+            height: 90vh;
+            width: 100%;
+            background-image: url(img.destinations.hussani_bridge.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            flex-direction: column;
+        }
+
+        .mdiv {
+            max-width: 50%;
+            text-align: center;
+            background-color: rgba(219, 219, 219, 0.621);
+            backdrop-filter: blur(3px);
+            border-radius: 20px;
+        }
+
+        .mdiv h1,.mdiv h2,.mdiv p {
+            padding: 10px;
+        }
+
+        .mdiv h1 {
+            font-size: 30px;
+
+        }
+
+        .mdiv h2 {
+            font-size: 40px;
+
+        }
+
+        .mdiv p {
+            font-size: 20px;
+        }
+
+        .service {
+            width: 80%;
+            margin: 50px auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .cards {
+            height: 300px;
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+        }
+
+        .cards img {
+            height: 100%;
+            width: 50%;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 20px;
+        }
+        .card-c{
+            width: 46%;
+            height: 90%;
+            margin: auto;
+            border-radius: 13px;
+        }
+        .card-c h3{
+             font-size: 40px;
+        }
+        .card-c p{
+            font-size: 22px;
+        }
+
+        /* Responsive Styles */
+        @media(max-width: 768px){
+            main {
+                height: auto;
+                padding: 40px 20px;
+                background-attachment: fixed;
+            }
+            
+            .mdiv {
+                max-width: 90%;
+            }
+            
+            .mdiv h1 {
+                font-size: 24px;
+            }
+            
+            .mdiv h2 {
+                font-size: 30px;
+            }
+            
+            .mdiv p {
+                font-size: 16px;
+            }
+            
+            .service {
+                width: 70%;
+                margin: 30px auto;
+                gap: 20px;
+            }
+            
+            .cards {
+                height: 250px;
+                width: 100%;
+                margin: 15px auto;
+                border-radius: 30px;
+                background-color: rgb(225, 225, 225);
+                flex-direction: column;
+            }
+            .cards-e{
+                flex-direction: column-reverse;
+            }
+            
+            .cards img {
+                width: 100%;
+                height: 50%;
+                border-radius: 15px;
+            }
+            
+            .card-c {
+                width: 100%;
+                height: auto;
+                padding: 15px;
+            }
+            
+            .card-c h3 {
+                font-size: 28px;
+            }
+            
+            .card-c p {
+                font-size: 16px;
+            }
+        }
+
+        @media(max-width: 480px){
+            main {
+                padding: 30px 15px;
+            }
+            
+            .mdiv {
+                max-width: 95%;
+                border-radius: 15px;
+            }
+            
+            .mdiv h1 {
+                font-size: 20px;
+                padding: 8px;
+            }
+            
+            .mdiv h2 {
+                font-size: 24px;
+                padding: 8px;
+            }
+            
+            .mdiv p {
+                font-size: 14px;
+                padding: 8px;
+            }
+            
+            .service {
+                width: 75%;
+                margin: 20px auto;
+                gap: 15px;
+            }
+            
+            .cards {
+                height: 200px;
+                width: 100%;
+                margin: 10px auto;
+            }
+            
+            .cards img {
+                height: 45%;
+                border-radius: 12px;
+            }
+            
+            .card-c {
+                padding: 12px;
+            }
+            
+            .card-c h3 {
+                font-size: 22px;
+                padding: 8px 0;
+            }
+            
+            .card-c p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div> 
+
+    <main>
+        <div class="mdiv">
+            <h1>
+                Services
+            </h1>
+            <h2>What We Do</h2>
+            <p>We offer a wide range of travel services designed to make your journey smooth, comfortable, and
+                stress-free. From planning to execution, we take care of every detail so you can travel with confidence.
+            </p>
+        </div>
+    </main>
+    <div class="service">
+        <div class="cards"><img src="img/Services/food.png" alt="">
+            <div class="card-c">
+                <h3>
+                  Food
+                </h3>
+                <p>We ensure hygienic, high-quality meals throughout your journey. Our food arrangements are selected carefully to suit different tastes and dietary preferences, allowing you to enjoy local flavors as well as familiar options during your trip.</p>
+            </div>
+        </div>
+        <div class="cards cards-e">
+            <div class="card-c">
+                <h3>
+                  Hotels
+                </h3>
+                <p>We provide comfortable and reliable hotel accommodations ranging from budget-friendly stays to luxury hotels. All our hotel partners are chosen for their cleanliness, safety, and convenient locations to ensure a pleasant stay.</p>
+            </div><img src="img/Services/Hotel.webp" alt="">
+        </div>
+        <div class="cards"><img src="img/Services/Bus.jpg" alt="">
+            <div class="card-c">
+                <h3>
+                Buses
+                </h3>
+                <p>Our bus and transportation services offer safe, comfortable, and well-maintained vehicles for local and long-distance travel. With experienced drivers and timely schedules, we make sure your journey is smooth and stress-free.</p>
+            </div>
+        </div>
+        <div class="cards cards-e">
+            <div class="card-c">
+                <h3>
+                  Our Guide
+                </h3>
+                <p>Our professional and knowledgeable tour guides help you explore destinations with deeper understanding and confidence. From historical insights to local culture and hidden spots, our guides enhance your travel experience at every step.</p>
+            </div><img src="img/Services/guide.jpg" alt="">
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="loader.js"></script>
+</body>
+
+</html>

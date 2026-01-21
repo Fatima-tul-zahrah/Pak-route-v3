@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        h1 {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .container-r {
+            width: 100%;
+            width: 40%;
+            background-color: #e5e5e5;
+            border-radius: 10px;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .star-rating {
+            width: 300px;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            /* Reverses the order so 1 is on the left */
+        }
+
+        h2 {
+            padding: 20px;
+
+        }
+
+        h3 {
+            padding: 20px;
+        }
+
+        .ins {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ins label {
+            position: absolute;
+            transform: translateY(50%) translateX(2%);
+            transition: all .5s ease;
+        }
+
+        input {
+            height: 40px;
+            width: 300px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+
+        textarea {
+            height: 40px;
+            width: 300px;
+            height: 100px;
+            border-bottom: 2px solid black;
+        }
+
+        .ins:has(input:focus) label {
+            font-size: 12px;
+            transform: translateY(-20%) translateX(4%);
+            color: rgb(16, 147, 255);
+        }
+
+        .ins:has(textarea:focus) label {
+            font-size: 14px;
+            color: rgb(16, 147, 255);
+            transform: translateY(-100%);
+
+        }
+
+        .in-2 {
+            margin: 30px 0;
+        }
+
+        /* Hide the actual radio circles */
+        .star-rating input {
+            display: none;
+        }
+
+        /* Style the stars (labels) */
+        .star-rating label {
+            font-size: 40px;
+            color: #ffffff;
+            /* Default Gray color */
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        /* Hover & Checked Logic: 
+   Lights up the star you are on AND all stars to its left */
+        .star-rating label:hover,
+        .star-rating label:hover~label,
+        .star-rating input:checked~label {
+            color: #f5b301;
+            /* Gold color */
+        }
+
+        /* Keeps stars gold when you hover over a different one after selecting */
+        .star-rating label:hover~label {
+            color: #ffca28;
+        }
+
+        .submit {
+            font-size: 20px;
+            padding: 10px 30px;
+            border: 2px solid black;
+            background-color: white;
+            transition: all .5s ease;
+            border-radius: 9px;
+            margin: 20px;
+        }
+
+        .submit:hover {
+            background-color: black;
+            color: white;
+        }
+
+        /* Responsive Styles */
+        @media(max-width: 768px){
+            h1 {
+                font-size: 24px;
+                padding: 20px;
+            }
+            
+            .container-r {
+                width: 85%;
+                border-radius: 10px;
+            }
+            
+            .star-rating {
+                width: 250px;
+                padding: 0 15px;
+            }
+            
+            .star-rating label {
+                font-size: 32px;
+            }
+            
+            h2 {
+                font-size: 18px;
+                padding: 15px;
+            }
+            
+            input {
+                width: 250px;
+                height: 35px;
+            }
+            
+            textarea {
+                width: 250px;
+                height: 80px;
+            }
+            
+            .submit {
+                font-size: 16px;
+                padding: 8px 24px;
+            }
+        }
+
+        @media(max-width: 480px){
+            h1 {
+                font-size: 20px;
+                padding: 15px;
+            }
+            
+            .container-r {
+                width: 90%;
+                border-radius: 8px;
+                margin: 10px auto;
+                padding: 10px;
+            }
+            
+            .star-rating {
+                width: 100%;
+                max-width: 200px;
+                padding: 0 10px;
+            }
+            
+            .star-rating label {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 16px;
+                padding: 10px;
+            }
+            
+            h3 {
+                font-size: 14px;
+                padding: 10px;
+            }
+            
+            input {
+                width: 100%;
+                max-width: 200px;
+                height: 32px;
+                font-size: 13px;
+            }
+            
+            textarea {
+                width: 100%;
+                max-width: 200px;
+                height: 70px;
+                font-size: 13px;
+            }
+            
+            .ins label {
+                font-size: 12px;
+            }
+            
+            .submit {
+                font-size: 14px;
+                padding: 6px 18px;
+                margin: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <h1>
+        Give Us A FEEDBACK
+    </h1>
+    <div class="container-r">
+        <h2>Whats Your name?</h2>
+        <div class="ins">
+            <label for="input">Name</label>
+            <input type="text" placeholder="">
+        </div>
+
+        <h2>
+            How was You Overall experience?
+        </h2>
+
+        <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+        </div>
+        <h3>
+            Any other Feedback or comments?
+        </h3>
+        <div class="ins in-2">
+            <label for="input">Enter Your Feedback here</label>
+            <textarea name="message" id=""></textarea>
+        </div>
+        <button class="submit">Submit</button>
+    </div>
+    <div id="footer"></div>
+    <script src="loader.js"></script>
+</body>
+
+</html>
